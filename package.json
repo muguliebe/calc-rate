@@ -1,6 +1,6 @@
 {
   "name": "calc-stock",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "calculator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/muguliebe/calc-stock"
   },
   "scripts": {
     "build": "tsc",
@@ -16,7 +16,7 @@
     "start": "node .",
     "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
     "prepublish": "tsc",
-    "publish": "npm publish"
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
