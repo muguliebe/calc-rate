@@ -1,3 +1,5 @@
 const calc = require('../../index')
 
-calc.sum(1, 2)
+const result = calc.sum(1, 2)
+console.log(result)
+
