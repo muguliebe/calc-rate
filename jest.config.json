@@ -1,0 +1,20 @@
+{
+  "collectCoverage": true,
+  "coveragePathIgnorePatterns": [
+    "<rootDir>/tmp",
+    "<rootDir>/index.js"
+  ],
+  "moduleFileExtensions": [
+    "js",
+    "mjs"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.mjs$": "babel-jest"
+  },
+  "testRegex": "((\\.|/*.)(test))\\.js?$",
+  "modulePathIgnorePatterns": [
+    "<rootDir>/tmp",
+    "<rootDir>/test/norm"
+  ]
+}

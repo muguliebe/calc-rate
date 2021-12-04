@@ -1,0 +1,22 @@
+{
+  "name": "calc-stock",
+  "version": "1.0.0",
+  "description": "calculator ",
+  "main": "index.js",
+  "author": "zany",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "jest": "^27.4.3",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.0"
+  }
+}
