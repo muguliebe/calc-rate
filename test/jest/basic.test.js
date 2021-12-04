@@ -1,7 +1,8 @@
-const calc = require('../../index')
+const calc = require('../../dist')
 
 describe('calc Basic', () => {
     it('sum result', () => {
-        expect(calc.sum(1, 1)).toEqual(2)
+        const result = calc.sum(1,1)
+        expect(result).toEqual(2)
     })
 })

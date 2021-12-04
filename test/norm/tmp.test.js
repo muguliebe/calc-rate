@@ -1,5 +1,6 @@
-const calc = require('../../index')
+const calc = require('../../dist')
 
-const result = calc.sum(1, 2)
-console.log(result)
+console.log(calc.sum(1, 1))
+console.log(calc.minus(1, 1))
+
 

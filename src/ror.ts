@@ -1,5 +1,3 @@
 export const ror = () => {
-    console.log('a')
+    console.log('as')
 }
-
-ror()

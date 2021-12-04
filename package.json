@@ -1,8 +1,9 @@
 {
   "name": "calc-stock",
-  "version": "1.0.1",
-  "description": "calculator ",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "calculator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "zany",
   "license": "ISC",
   "repository": {
@@ -10,13 +11,19 @@
     "url": ""
   },
   "scripts": {
+    "build": "tsc",
+    "bw": "tsc --watch",
+    "start": "node .",
     "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
-    "start": "node ."
+    "prepublish": "tsc",
+    "publish": "npm publish"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.3",
     "cross-env": "^7.0.3",
     "jest": "^27.4.3",
     "nodemon": "^2.0.15",
-    "prettier": "^2.5.0"
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.7"
   }
 }
