@@ -15,8 +15,7 @@
     "bw": "tsc --watch",
     "start": "node .",
     "test": "cross-env NODE_ENV=test jest --runInBand --detectOpenHandles --forceExit --maxWorker=1",
-    "prepublish": "tsc",
-    "publish": "npm publish --access public"
+    "prepublish": "tsc"
   },
   "devDependencies": {
     "@types/jest": "^27.0.3",
