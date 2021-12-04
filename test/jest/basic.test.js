@@ -1,8 +1,8 @@
 const calc = require('../../dist')
 
 describe('calc Basic', () => {
-    it('sum result', () => {
-        const result = calc.sum(1,1)
-        expect(result).toEqual(2)
+    it('normal', () => {
+        expect(calc.sum(1, 1)).toEqual(2)
+        expect(calc.minus(1, 1)).toEqual(0)
     })
 })
