@@ -1,4 +1,4 @@
-const calc = require('../../dist')
+import * as calc from '../../src'
 
 describe('ror', () => {
     it('normal', () => {

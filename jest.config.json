@@ -1,4 +1,6 @@
 {
+  "preset": "ts-jest",
+  "testEnvironment": "node",
   "collectCoverage": true,
   "coveragePathIgnorePatterns": [
     "<rootDir>/tmp",
@@ -6,15 +8,18 @@
   ],
   "moduleFileExtensions": [
     "js",
-    "mjs"
+    "mjs",
+    "ts"
   ],
   "transform": {
     "^.+\\.js$": "babel-jest",
-    "^.+\\.mjs$": "babel-jest"
+    "^.+\\.mjs$": "babel-jest",
+    "^.+\\.ts$": "ts-jest"
   },
-  "testRegex": "((\\.|/*.)(test))\\.js?$",
+  "testRegex": "((\\.|/*.)(test))\\.ts?$",
   "modulePathIgnorePatterns": [
     "<rootDir>/tmp",
-    "<rootDir>/test/norm"
+    "<rootDir>/test/norm",
+    "<rootDir>/test/jest"
   ]
 }

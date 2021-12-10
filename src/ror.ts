@@ -10,7 +10,7 @@ import Decimal from "decimal.js";
  * @param tax 세금%
  */
 export const ror = (prcStart: number, prcCurrent: number, amount: number
-    , feeBuy: number=0, feeSell: number=0, tax:number=0): number => {
+    , feeBuy: number = 0, feeSell: number = 0, tax: number = 0): number => {
 
     /*
         진입 총액 =  매수 주식수 * 시점 주가
