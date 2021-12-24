@@ -1,7 +1,7 @@
 import Decimal from "decimal.js";
 
 /**
- * 수익률 계산
+ * 수익률(rate of returns) 계산
  * @param prcStart 시작가
  * @param prcCurrent 현재가
  * @param amount 진입 개수
