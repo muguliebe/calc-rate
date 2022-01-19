@@ -3,6 +3,8 @@ import * as calc from '../../src'
 describe('rate', () => {
     it('part', () => {
         expect(calc.percentPart(3, 100)).toEqual(3)
+        expect(calc.percentPart(3, 200)).toEqual(1.5)
+        expect(calc.percentPart(3, 10000)).toEqual(0.03)
     })
     it('percentOfTot', () => {
         expect(calc.percentOfTot(100, 30)).toEqual(30)

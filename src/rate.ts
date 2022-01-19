@@ -13,7 +13,7 @@ import Decimal from "decimal.js";
  * @param part
  * @param fixed
  */
-export const percentPart = (part: number, tot: number, fixed: number = 2): number => {
+export const percentPart = (part: number|Decimal, tot: number|Decimal, fixed: number = 2): number => {
     const result = new Decimal(part).dividedBy(tot)
         .mul(100)
         .toFixed(fixed)
